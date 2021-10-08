@@ -11,8 +11,7 @@ object HtmlUtils {
         // 2
         val descSpan: Spanned
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            descSpan = Html.fromHtml(newHtmlDesc,
-                Html.FROM_HTML_MODE_LEGACY)
+            descSpan = Html.fromHtml(newHtmlDesc, Html.FROM_HTML_MODE_LEGACY)
         } else {
             @Suppress("DEPRECATION")
             descSpan = Html.fromHtml(newHtmlDesc)
